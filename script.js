@@ -114,6 +114,59 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
+// === GA4 Key Event Tracking ===
+document.addEventListener('DOMContentLoaded', function () {
+
+    // 1. Track "Give Securely Online" button clicks (give.html)
+    document.querySelectorAll('a.give-btn-large, a[href*="churchcenter.com/giving"]').forEach(function (el) {
+        el.addEventListener('click', function () {
+            if (typeof gtag === 'function') {
+                gtag('event', 'give_button_click', {
+                    event_category: 'engagement',
+                    event_label: 'Give Securely Online'
+                });
+            }
+        });
+    });
+
+    // 2. Track "Connect With Us" form button clicks (connect.html)
+    document.querySelectorAll('a.connect-card-btn').forEach(function (el) {
+        el.addEventListener('click', function () {
+            if (typeof gtag === 'function') {
+                gtag('event', 'connect_form_click', {
+                    event_category: 'engagement',
+                    event_label: 'Connect With Us'
+                });
+            }
+        });
+    });
+
+    // 3. Track phone number clicks — all pages (tel: links)
+    document.querySelectorAll('a[href^="tel:"]').forEach(function (el) {
+        el.addEventListener('click', function () {
+            if (typeof gtag === 'function') {
+                gtag('event', 'phone_click', {
+                    event_category: 'contact',
+                    event_label: el.getAttribute('href').replace('tel:', '')
+                });
+            }
+        });
+    });
+
+    // 4. Track email link clicks — all pages (mailto: links)
+    document.querySelectorAll('a[href^="mailto:"]').forEach(function (el) {
+        el.addEventListener('click', function () {
+            if (typeof gtag === 'function') {
+                gtag('event', 'email_click', {
+                    event_category: 'contact',
+                    event_label: el.getAttribute('href').replace('mailto:', '')
+                });
+            }
+        });
+    });
+
+});
+
 // Hero Carousel Functionality
 document.addEventListener('DOMContentLoaded', () => {
     const track = document.querySelector('.carousel-track');
