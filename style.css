@@ -1492,49 +1492,29 @@ form {
 
     .dropdown-content {
         position: static;
-        display: none;
+        display: block;
         border: none;
         box-shadow: none;
-        padding: 0 0 0 1rem;
+        padding: 0;
         width: 100%;
-        background: #f8f9fa;
-    }
-
-    .dropdown.active .dropdown-content {
-        display: block;
-        animation: slideDown 0.3s ease-in-out;
-    }
-
-    @keyframes slideDown {
-        from {
-            opacity: 0;
-            transform: translateY(-10px);
-        }
-
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        background: transparent;
     }
 
     .nav-links .dropdown-content a {
         font-size: 1rem;
-        padding: 0.75rem 1rem;
+        padding: 0.75rem 1rem 0.75rem 2.5rem;
         border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        color: var(--nc-gray);
+    }
+
+    .nav-links .dropdown-content a:hover {
+        background-color: var(--nc-off-white);
+        color: var(--nc-green);
     }
 
     /* Dropdown Arrow Indicator */
     .dropdown .dropbtn::after {
-        content: '\25BC';
-        /* Down Arrow */
-        font-size: 0.75rem;
-        transition: transform 0.3s;
-        margin-left: 0.5rem;
-        color: var(--nc-green);
-    }
-
-    .dropdown.active .dropbtn::after {
-        transform: rotate(180deg);
+        display: none;
     }
 
     .hamburger {
