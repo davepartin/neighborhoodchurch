@@ -262,3 +262,43 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }, { passive: true });
 });
+
+// Easter Popup Modal
+(function () {
+    const modal = document.getElementById('easter-modal');
+    const closeBtn = document.getElementById('easter-modal-close');
+
+    if (!modal) return;
+
+    // Show the modal on page load
+    function openModal() {
+        modal.classList.remove('hidden');
+        document.body.style.overflow = 'hidden';
+    }
+
+    function closeModal() {
+        modal.classList.add('hidden');
+        document.body.style.overflow = '';
+    }
+
+    openModal();
+
+    // Close on X button
+    if (closeBtn) {
+        closeBtn.addEventListener('click', closeModal);
+    }
+
+    // Close when clicking the dark overlay outside the image
+    modal.addEventListener('click', function (e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Close on Escape key
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') {
+            closeModal();
+        }
+    });
+})();
