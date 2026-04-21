@@ -1,0 +1,1089 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO Sports Camp 2026 | Neighborhood Church</title>
+    <meta name="description"
+        content="Register for FREE GO Sports Camp at Neighborhood Church in Overland Park! June 15-17, 2026. Three days of sports, fun, and faith for kids. 9:30am-12:30pm.">
+    <link rel="canonical" href="https://neighborhoodchurchop.com/sportscamp.html">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://neighborhoodchurchop.com/sportscamp.html">
+    <meta property="og:title" content="GO Sports Camp 2026 | Neighborhood Church">
+    <meta property="og:description"
+        content="FREE Sports Camp for kids! June 15-17, 2026 at Neighborhood Church in Overland Park. Three days of sports, fun, and faith.">
+    <meta property="og:image" content="https://neighborhoodchurchop.com/pic_sportscamp.png">
+
+    <!-- Twitter / X -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="GO Sports Camp 2026 | Neighborhood Church">
+    <meta name="twitter:description"
+        content="FREE Sports Camp for kids! June 15-17, 2026 at Neighborhood Church in Overland Park.">
+    <meta name="twitter:image" content="https://neighborhoodchurchop.com/pic_sportscamp.png">
+
+    <meta name="robots" content="index, follow">
+    <meta name="keywords"
+        content="sports camp Overland Park, free kids camp, VBS Overland Park, summer camp church, kids sports camp Kansas City, Neighborhood Church sports camp, GO sports camp 2026">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Open+Sans:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="logo_NC3.png">
+    <style>
+        /* ===================================
+           Sports Camp Page Styles
+           =================================== */
+
+        /* Hero Section */
+        .sc-hero {
+            position: relative;
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 30%, #FFB347 100%);
+            padding: 0;
+            overflow: hidden;
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+        }
+
+        .sc-hero::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            right: -20%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .sc-hero::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 120px;
+            background: linear-gradient(to top, var(--nc-white), transparent);
+            z-index: 1;
+        }
+
+        /* Animated floating shapes */
+        .sc-hero-shapes {
+            position: absolute;
+            inset: 0;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .sc-shape {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.08;
+            background: white;
+        }
+
+        .sc-shape:nth-child(1) {
+            width: 300px;
+            height: 300px;
+            top: 10%;
+            left: -5%;
+            animation: scFloat 8s ease-in-out infinite;
+        }
+
+        .sc-shape:nth-child(2) {
+            width: 200px;
+            height: 200px;
+            top: 60%;
+            right: 5%;
+            animation: scFloat 10s ease-in-out infinite reverse;
+        }
+
+        .sc-shape:nth-child(3) {
+            width: 150px;
+            height: 150px;
+            bottom: 20%;
+            left: 30%;
+            animation: scFloat 7s ease-in-out infinite 1s;
+        }
+
+        .sc-shape:nth-child(4) {
+            width: 100px;
+            height: 100px;
+            top: 15%;
+            right: 25%;
+            animation: scFloat 6s ease-in-out infinite 0.5s;
+        }
+
+        @keyframes scFloat {
+
+            0%,
+            100% {
+                transform: translateY(0) scale(1);
+            }
+
+            50% {
+                transform: translateY(-30px) scale(1.05);
+            }
+        }
+
+        .sc-hero-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 8rem 5% 6rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .sc-hero-text {
+            color: white;
+        }
+
+        .sc-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: rgba(255, 255, 255, 0.2);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 0.5rem 1.25rem;
+            border-radius: var(--radius-full);
+            font-weight: 700;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 1.5rem;
+            color: white;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+        }
+
+        .sc-badge-dot {
+            width: 8px;
+            height: 8px;
+            background: #4ADE80;
+            border-radius: 50%;
+            animation: scPulse 2s ease-in-out infinite;
+        }
+
+        @keyframes scPulse {
+
+            0%,
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+
+            50% {
+                opacity: 0.5;
+                transform: scale(1.3);
+            }
+        }
+
+        .sc-hero-text h1 {
+            color: white;
+            font-size: clamp(3rem, 6vw, 5rem);
+            font-weight: 900;
+            line-height: 1.05;
+            margin-bottom: 1.5rem;
+            text-shadow: 0 2px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .sc-hero-text h1 span {
+            display: block;
+            font-size: 0.5em;
+            font-weight: 700;
+            opacity: 0.9;
+            margin-top: 0.25rem;
+        }
+
+        .sc-hero-subtitle {
+            font-size: 1.35rem;
+            color: white;
+            opacity: 0.95;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+            max-width: 520px;
+        }
+
+        .sc-hero-cta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .sc-btn-register {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.75rem;
+            background: white;
+            color: #FF6B35;
+            padding: 1.1rem 2.5rem;
+            border-radius: var(--radius-full);
+            font-family: var(--font-heading);
+            font-weight: 800;
+            font-size: 1.1rem;
+            transition: var(--transition);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+            text-decoration: none;
+        }
+
+        .sc-btn-register:hover {
+            transform: translateY(-3px) scale(1.02);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+            color: #e55a25;
+        }
+
+        .sc-btn-register svg {
+            transition: transform 0.3s ease;
+        }
+
+        .sc-btn-register:hover svg {
+            transform: translateX(3px);
+        }
+
+        .sc-btn-video {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: transparent;
+            color: white;
+            padding: 1.1rem 2rem;
+            border-radius: var(--radius-full);
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            border: 2px solid rgba(255, 255, 255, 0.5);
+            transition: var(--transition);
+            text-decoration: none;
+        }
+
+        .sc-btn-video:hover {
+            background: rgba(255, 255, 255, 0.15);
+            border-color: white;
+            transform: translateY(-2px);
+        }
+
+        .sc-hero-image {
+            position: relative;
+        }
+
+        .sc-hero-image img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
+            transform: rotate(2deg);
+            transition: var(--transition);
+        }
+
+        .sc-hero-image:hover img {
+            transform: rotate(0deg) scale(1.01);
+        }
+
+        .sc-hero-image::before {
+            content: 'FREE!';
+            position: absolute;
+            top: -15px;
+            right: -10px;
+            background: var(--nc-yellow);
+            color: var(--nc-dark);
+            font-family: var(--font-heading);
+            font-weight: 900;
+            font-size: 1.1rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: var(--radius-full);
+            z-index: 5;
+            box-shadow: 0 4px 16px rgba(244, 197, 66, 0.4);
+            animation: scBounce 3s ease-in-out infinite;
+        }
+
+        @keyframes scBounce {
+
+            0%,
+            100% {
+                transform: translateY(0) rotate(-3deg);
+            }
+
+            50% {
+                transform: translateY(-8px) rotate(3deg);
+            }
+        }
+
+        /* Quick Info Bar */
+        .sc-info-bar {
+            background: var(--nc-dark);
+            padding: 0;
+            position: relative;
+            z-index: 3;
+        }
+
+        .sc-info-bar-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0;
+        }
+
+        .sc-info-item {
+            padding: 2rem 1.5rem;
+            text-align: center;
+            border-right: 1px solid rgba(255, 255, 255, 0.08);
+            transition: var(--transition);
+        }
+
+        .sc-info-item:last-child {
+            border-right: none;
+        }
+
+        .sc-info-item:hover {
+            background: rgba(255, 255, 255, 0.03);
+        }
+
+        .sc-info-icon {
+            width: 48px;
+            height: 48px;
+            margin: 0 auto 0.75rem;
+            background: rgba(255, 107, 53, 0.15);
+            border-radius: var(--radius-sm);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .sc-info-icon svg {
+            color: #FF6B35;
+        }
+
+        .sc-info-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #7a8691;
+            margin-bottom: 0.25rem;
+            font-weight: 600;
+        }
+
+        .sc-info-value {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1rem;
+            color: white;
+            margin: 0;
+        }
+
+        /* Video Section */
+        .sc-video-section {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 6rem 5%;
+        }
+
+        .sc-video-section .section-header {
+            margin-bottom: 3rem;
+        }
+
+        .sc-video-wrapper {
+            position: relative;
+            width: 100%;
+            max-width: 960px;
+            margin: 0 auto;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.12);
+        }
+
+        .sc-video-wrapper::before {
+            content: '';
+            display: block;
+            padding-top: 56.25%;
+        }
+
+        .sc-video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none;
+        }
+
+        /* Details Section */
+        .sc-details {
+            background: var(--nc-off-white);
+            padding: 6rem 5%;
+        }
+
+        .sc-details-inner {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .sc-details-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 4rem;
+            align-items: start;
+        }
+
+        .sc-detail-card {
+            background: white;
+            border-radius: var(--radius-lg);
+            padding: 3rem;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            border-top: 4px solid #FF6B35;
+        }
+
+        .sc-detail-card:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .sc-detail-card h3 {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.5rem;
+        }
+
+        .sc-detail-card h3 svg {
+            flex-shrink: 0;
+            color: #FF6B35;
+        }
+
+        .sc-detail-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .sc-detail-list li {
+            display: flex;
+            align-items: flex-start;
+            gap: 0.75rem;
+            padding: 0.75rem 0;
+            border-bottom: 1px solid var(--nc-light-gray);
+            font-size: 1.05rem;
+            color: var(--nc-dark);
+        }
+
+        .sc-detail-list li:last-child {
+            border-bottom: none;
+        }
+
+        .sc-detail-list li svg {
+            flex-shrink: 0;
+            margin-top: 3px;
+            color: var(--nc-green);
+        }
+
+        .sc-detail-list li strong {
+            color: var(--nc-dark);
+        }
+
+        .sc-detail-list li a {
+            color: #FF6B35;
+            text-decoration: none;
+            font-weight: 600;
+            transition: var(--transition);
+        }
+
+        .sc-detail-list li a:hover {
+            color: #e55a25;
+            text-decoration: underline;
+        }
+
+        /* Photo Gallery */
+        .sc-gallery {
+            padding: 6rem 5%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .sc-gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+        }
+
+        .sc-gallery-item {
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            transition: var(--transition);
+            position: relative;
+        }
+
+        .sc-gallery-item:hover {
+            transform: translateY(-5px);
+            box-shadow: var(--shadow-lg);
+        }
+
+        .sc-gallery-item img {
+            width: 100%;
+            height: 300px;
+            object-fit: cover;
+            transition: transform 0.5s ease;
+        }
+
+        .sc-gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        /* CTA Section */
+        .sc-cta {
+            background: linear-gradient(135deg, #FF6B35 0%, #F7931E 50%, #FFB347 100%);
+            padding: 6rem 5%;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sc-cta::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -20%;
+            width: 80%;
+            height: 200%;
+            background: radial-gradient(ellipse, rgba(255, 255, 255, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .sc-cta-inner {
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .sc-cta h2 {
+            color: white;
+            font-size: clamp(2rem, 4vw, 3rem);
+            margin-bottom: 1rem;
+        }
+
+        .sc-cta p {
+            color: white;
+            opacity: 0.95;
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .sc-cta .sc-btn-register {
+            font-size: 1.25rem;
+            padding: 1.25rem 3rem;
+        }
+
+        .sc-cta-note {
+            margin-top: 1.5rem;
+            font-size: 0.95rem !important;
+            opacity: 0.8 !important;
+            font-style: italic;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .sc-hero-content {
+                grid-template-columns: 1fr;
+                gap: 3rem;
+                padding: 6rem 5% 4rem;
+            }
+
+            .sc-hero {
+                min-height: auto;
+            }
+
+            .sc-hero-image img {
+                height: 400px;
+            }
+
+            .sc-info-bar-inner {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .sc-info-item:nth-child(2) {
+                border-right: none;
+            }
+
+            .sc-details-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .sc-hero-content {
+                padding: 5rem 5% 3rem;
+            }
+
+            .sc-hero-text h1 {
+                font-size: 2.5rem;
+            }
+
+            .sc-hero-image img {
+                height: 300px;
+                transform: rotate(0deg);
+            }
+
+            .sc-hero-cta {
+                flex-direction: column;
+            }
+
+            .sc-hero-cta a {
+                width: 100%;
+                text-align: center;
+                justify-content: center;
+            }
+
+            .sc-info-bar-inner {
+                grid-template-columns: 1fr;
+            }
+
+            .sc-info-item {
+                border-right: none;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+            }
+
+            .sc-info-item:last-child {
+                border-bottom: none;
+            }
+
+            .sc-gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .sc-gallery-item img {
+                height: 250px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .sc-btn-register {
+                padding: 1rem 1.5rem;
+                font-size: 1rem;
+            }
+
+            .sc-detail-card {
+                padding: 2rem;
+            }
+        }
+    </style>
+    <script src="https://js.churchcenter.com/modal/v1"></script>
+
+    <!-- Google Analytics — Replace G-MRFCLGZSNT with your Measurement ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-MRFCLGZSNT"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-MRFCLGZSNT');
+    </script>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <img src="logo_NC3.png" alt="Neighborhood Church Logo" class="logo-img">
+                <span>neighborhood church</span>
+            </a>
+
+            <button class="hamburger" aria-label="Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links">
+                <div class="dropdown">
+                    <a href="about.html" class="dropbtn">About</a>
+                    <div class="dropdown-content">
+                        <a href="about.html#leadership">Leadership</a>
+                        <a href="about.html#values">Values</a>
+                        <a href="about.html#beliefs">Beliefs</a>
+                        <a href="about.html#story">Planting History</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                <a href="sundays.html">Sundays</a>
+                <div class="dropdown">
+                    <a href="ministries.html" class="dropbtn">Ministries</a>
+                    <div class="dropdown-content">
+                        <a href="ministries.html#kids">Neighborhood Kids</a>
+                        <a href="ministries.html#youth">Youth Group</a>
+                        <a href="ministries.html#youngadults">Young Adults Group</a>
+                        <a href="ministries.html#women">Women's Ministry</a>
+                        <a href="ministries.html#men">Men's Ministry</a>
+                        <a href="ministries.html#joyclub">Joy Club</a>
+                        <a href="ministries.html#serve">Serve Teams</a>
+                    </div>
+                </div>
+                <a href="https://www.youtube.com/@neighborhoodchurchop/streams" target="_blank">Watch Online</a>
+                <a href="give.html">Give</a>
+                <a href="sportscamp.html" class="nav-link-active"
+                    style="color: #FF6B35 !important; border-color: #FF6B35 !important;">Sports Camp</a>
+                <a href="sundays.html" class="btn-nav-primary">Plan Your Visit</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="sc-hero" id="top">
+        <div class="sc-hero-shapes">
+            <div class="sc-shape"></div>
+            <div class="sc-shape"></div>
+            <div class="sc-shape"></div>
+            <div class="sc-shape"></div>
+        </div>
+
+        <div class="sc-hero-content">
+            <div class="sc-hero-text">
+                <div class="sc-badge">
+                    <div class="sc-badge-dot"></div>
+                    Registration Open
+                </div>
+                <h1>GO Sports Camp
+                    <span>June 15–17, 2026</span>
+                </h1>
+                <p class="sc-hero-subtitle">Three days of sports, fun, and faith — completely FREE! Your kids will
+                    love every minute of it.</p>
+                <div class="sc-hero-cta">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjxeH0bXSWVjAXxEG3THo0KDnIW3OwfsiasDehWrdmL0udyQ/viewform?usp=header"
+                        target="_blank" class="sc-btn-register" id="hero-register-btn">
+                        Register Now — It's Free!
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </a>
+                    <a href="#video" class="sc-btn-video" id="hero-video-btn">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <polygon points="5,3 19,12 5,21" fill="currentColor" />
+                        </svg>
+                        Watch Video
+                    </a>
+                </div>
+            </div>
+            <div class="sc-hero-image">
+                <img src="pic_sportscamp.png" alt="Kids having fun at GO Sports Camp">
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Info Bar -->
+    <div class="sc-info-bar">
+        <div class="sc-info-bar-inner">
+            <div class="sc-info-item">
+                <div class="sc-info-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" />
+                        <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="sc-info-label">When</div>
+                <p class="sc-info-value">June 15, 16, 17 (Mon–Wed)</p>
+            </div>
+            <div class="sc-info-item">
+                <div class="sc-info-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="2" />
+                        <polyline points="12,6 12,12 16,14" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="sc-info-label">Time</div>
+                <p class="sc-info-value">9:30 AM – 12:30 PM</p>
+            </div>
+            <div class="sc-info-item">
+                <div class="sc-info-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                            stroke="currentColor" stroke-width="2" />
+                        <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                    </svg>
+                </div>
+                <div class="sc-info-label">Where</div>
+                <p class="sc-info-value">Neighborhood Church, OP</p>
+            </div>
+            <div class="sc-info-item">
+                <div class="sc-info-icon">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <line x1="12" y1="1" x2="12" y2="23" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" />
+                        <path d="M17 5H9.5C7.01 5 5 7.01 5 9.5S7.01 14 9.5 14H14.5C16.99 14 19 16.01 19 18.5S16.99 23 14.5 23H6"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+                </div>
+                <div class="sc-info-label">Cost</div>
+                <p class="sc-info-value">100% FREE</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Video Section -->
+    <section class="sc-video-section" id="video">
+        <div class="section-header">
+            <span class="section-tag" style="color: #FF6B35;">See It In Action</span>
+            <h2>What Is GO Sports Camp?</h2>
+            <p class="section-intro">Watch this quick video to get a taste of the excitement, energy, and heart behind
+                GO Sports Camp.</p>
+        </div>
+        <div class="sc-video-wrapper">
+            <iframe src="https://www.youtube.com/embed/1JxwASBfhXc?rel=0" title="GO Sports Camp Video"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen loading="lazy"></iframe>
+        </div>
+    </section>
+
+    <!-- Details Section -->
+    <section class="sc-details">
+        <div class="sc-details-inner">
+            <div class="section-header">
+                <span class="section-tag" style="color: #FF6B35;">Event Details</span>
+                <h2>Everything You Need to Know</h2>
+            </div>
+            <div class="sc-details-grid">
+                <!-- Schedule & Info Card -->
+                <div class="sc-detail-card">
+                    <h3>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <rect x="3" y="4" width="18" height="18" rx="2" stroke="currentColor" stroke-width="2" />
+                            <line x1="16" y1="2" x2="16" y2="6" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="8" y1="2" x2="8" y2="6" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" />
+                            <line x1="3" y1="10" x2="21" y2="10" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        Schedule & Info
+                    </h3>
+                    <ul class="sc-detail-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span><strong>Dates:</strong> June 15, 16, 17, 2026 (Mon–Wed) — 3 Days</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span><strong>Time:</strong> 9:30 AM – 12:30 PM daily</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span><strong>Meals:</strong> No lunch provided, but a snack will be provided</span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span><strong>Cost:</strong> FREE — Sponsored by Neighborhood Church</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Location & Contact Card -->
+                <div class="sc-detail-card">
+                    <h3>
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 10C21 17 12 23 12 23C12 23 3 17 3 10C3 7.61305 3.94821 5.32387 5.63604 3.63604C7.32387 1.94821 9.61305 1 12 1C14.3869 1 16.6761 1.94821 18.364 3.63604C20.0518 5.32387 21 7.61305 21 10Z"
+                                stroke="currentColor" stroke-width="2" />
+                            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="2" />
+                        </svg>
+                        Location & Contact
+                    </h3>
+                    <ul class="sc-detail-list">
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span><strong>Neighborhood Church</strong><br>
+                                8600 W. 91st Ter.<br>
+                                Overland Park, KS 66212<br>
+                                <em>(Antioch and 91st)</em></span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span><strong>Contact:</strong> Joel Reed<br>
+                                <a href="tel:+19139636703">(913) 963-6703</a><br>
+                                <a href="mailto:jtreed89@gmail.com">jtreed89@gmail.com</a></span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span><strong>Website:</strong> <a href="https://www.neighborhoodchurchop.com"
+                                    target="_blank">www.NeighborhoodChurchOP.com</a></span>
+                        </li>
+                        <li>
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 6L9 17L4 12" stroke="currentColor" stroke-width="2.5"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            <span>
+                                <a href="https://www.google.com/maps/search/?api=1&query=8600+W+91st+Terrace,+Overland+Park,+KS+66212"
+                                    target="_blank">📍 Get Directions on Google Maps</a>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Photo Gallery -->
+    <section class="sc-gallery">
+        <div class="section-header">
+            <span class="section-tag" style="color: #FF6B35;">Past Camps</span>
+            <h2>Moments From Sports Camp</h2>
+            <p class="section-intro">Check out some highlights from previous years. Your kids could be part of the fun
+                this summer!</p>
+        </div>
+        <div class="sc-gallery-grid">
+            <div class="sc-gallery-item">
+                <img src="pic_gosportscamp.png" alt="Kids playing at GO Sports Camp" loading="lazy">
+            </div>
+            <div class="sc-gallery-item">
+                <img src="sportscampcoaches.JPG" alt="Sports Camp coaches and volunteers" loading="lazy">
+            </div>
+            <div class="sc-gallery-item">
+                <img src="sportscampparty.JPG" alt="Sports Camp celebration party" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="sc-cta" id="register">
+        <div class="sc-cta-inner">
+            <h2>Ready to Sign Up?</h2>
+            <p>Don't miss out on three amazing days of sports, friendships, and fun — all for FREE. Spots fill up fast,
+                so register today!</p>
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjxeH0bXSWVjAXxEG3THo0KDnIW3OwfsiasDehWrdmL0udyQ/viewform?usp=header"
+                target="_blank" class="sc-btn-register" id="cta-register-btn">
+                Register Your Kids Now
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5"
+                        stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </a>
+            <p class="sc-cta-note">Sponsored by Neighborhood Church · www.NeighborhoodChurchOP.com</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <img src="logo_NC3.png" alt="Neighborhood Church Logo" class="logo-img">
+                    <span>neighborhood church</span>
+                </div>
+                <p class="footer-tagline">Loving God and our neighbors together</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Connect</h4>
+                    <ul>
+                        <li><a href="about.html">Our Story</a></li>
+                        <li><a href="sundays.html">Plan Your Visit</a></li>
+                        <li><a href="about.html#leadership">Leadership</a></li>
+                        <li><a href="connect.html">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Get Involved</h4>
+                    <ul>
+                        <li><a href="ministries.html">Ministries</a></li>
+                        <li><a href="give.html">Give</a></li>
+                        <li><a href="https://www.youtube.com/@neighborhoodchurchop/streams" target="_blank">Watch
+                                Online</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h4>Visit Us</h4>
+                    <address>
+                        <p>Sundays at 10:30 AM</p>
+                        <p>8600 W 91st Terrace<br>Overland Park, KS 66212</p>
+                        <p><a href="tel:+19132749070">(913) 274-9070</a></p>
+                    </address>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Neighborhood Church. All rights reserved.</p>
+            <div class="social-links">
+                <a href="https://www.facebook.com/neighborhoodchurchop" target="_blank" aria-label="Facebook">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z" />
+                    </svg>
+                </a>
+                <a href="https://www.instagram.com/neighborhoodchurchop" target="_blank" aria-label="Instagram">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                    </svg>
+                </a>
+                <a href="https://www.youtube.com/@neighborhoodchurchop/streams" target="_blank" aria-label="YouTube">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                            d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
