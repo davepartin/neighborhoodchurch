@@ -4,24 +4,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GO Sports Camp 2026 | Neighborhood Church</title>
+    <title>GO Sports Camp | Neighborhood Church</title>
     <meta name="description"
-        content="Register for FREE GO Sports Camp at Neighborhood Church in Overland Park! June 15-17, 2026. Three days of sports, fun, and faith for kids. 9:30am-12:30pm.">
+        content="That's a wrap on GO Sports Camp 2026! Three days of soccer, basketball, cheer, and faith for 300+ neighborhood kids at Neighborhood Church in Overland Park. See you next summer!">
     <link rel="canonical" href="https://neighborhoodchurchop.com/sportscamp.html">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://neighborhoodchurchop.com/sportscamp.html">
-    <meta property="og:title" content="GO Sports Camp 2026 | Neighborhood Church">
+    <meta property="og:title" content="GO Sports Camp | Neighborhood Church">
     <meta property="og:description"
-        content="FREE Sports Camp for kids! June 15-17, 2026 at Neighborhood Church in Overland Park. Three days of sports, fun, and faith.">
+        content="Thanks for an amazing GO Sports Camp 2026! A free week of sports, fun, and faith for neighborhood kids. We can't wait for next summer.">
     <meta property="og:image" content="https://neighborhoodchurchop.com/pic_sportscamp.png">
 
     <!-- Twitter / X -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GO Sports Camp 2026 | Neighborhood Church">
+    <meta name="twitter:title" content="GO Sports Camp | Neighborhood Church">
     <meta name="twitter:description"
-        content="FREE Sports Camp for kids! June 15-17, 2026 at Neighborhood Church in Overland Park.">
+        content="Thanks for an amazing GO Sports Camp 2026! A free week of sports, fun, and faith for neighborhood kids.">
     <meta name="twitter:image" content="https://neighborhoodchurchop.com/pic_sportscamp.png">
 
     <meta name="robots" content="index, follow">
@@ -169,9 +169,142 @@
         .sc-badge-dot {
             width: 8px;
             height: 8px;
-            background: #4ADE80;
+            background: #FCD34D;
             border-radius: 50%;
             animation: scPulse 2s ease-in-out infinite;
+        }
+
+        /* Closing Party Section */
+        .sc-party {
+            background: var(--nc-dark);
+            padding: 6rem 5%;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .sc-party::before {
+            content: '';
+            position: absolute;
+            top: -30%;
+            right: -10%;
+            width: 60%;
+            height: 160%;
+            background: radial-gradient(ellipse, rgba(255, 107, 53, 0.12) 0%, transparent 70%);
+            pointer-events: none;
+        }
+
+        .sc-party-inner {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .sc-party-eyebrow {
+            display: inline-block;
+            font-family: var(--font-heading);
+            font-size: 0.8rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+            color: #FF6B35;
+            margin-bottom: 1.25rem;
+        }
+
+        .sc-party h2 {
+            color: white;
+            font-size: clamp(2.2rem, 5vw, 3.5rem);
+            font-weight: 900;
+            line-height: 1.1;
+            margin-bottom: 1rem;
+        }
+
+        .sc-party-tagline {
+            font-size: 1.25rem;
+            color: rgba(255,255,255,0.75);
+            margin-bottom: 3rem;
+            line-height: 1.7;
+        }
+
+        .sc-party-details {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+
+        .sc-party-detail {
+            background: rgba(255,255,255,0.06);
+            border: 1px solid rgba(255,255,255,0.1);
+            border-radius: var(--radius-md);
+            padding: 2rem 1.5rem;
+            transition: var(--transition);
+        }
+
+        .sc-party-detail:hover {
+            background: rgba(255,255,255,0.09);
+            border-color: rgba(255,107,53,0.4);
+        }
+
+        .sc-party-detail-icon {
+            font-size: 2rem;
+            margin-bottom: 0.75rem;
+        }
+
+        .sc-party-detail-label {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #7a8691;
+            font-weight: 600;
+            margin-bottom: 0.4rem;
+        }
+
+        .sc-party-detail-value {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: white;
+        }
+
+        .sc-party-note {
+            font-size: 1.1rem;
+            color: rgba(255,255,255,0.7);
+            margin-bottom: 2.5rem;
+            font-style: italic;
+        }
+
+        .sc-party-contact {
+            background: rgba(255,107,53,0.12);
+            border: 1px solid rgba(255,107,53,0.3);
+            border-radius: var(--radius-md);
+            padding: 1.5rem 2rem;
+            display: inline-block;
+        }
+
+        .sc-party-contact p {
+            color: rgba(255,255,255,0.8);
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .sc-party-contact a {
+            color: #FF6B35;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .sc-party-contact a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .sc-party-details {
+                grid-template-columns: 1fr;
+                max-width: 320px;
+                margin: 0 auto 3rem;
+            }
         }
 
         @keyframes scPulse {
@@ -291,11 +424,11 @@
         }
 
         .sc-hero-image::before {
-            content: 'FREE!';
+            content: "THAT'S A WRAP!";
             position: absolute;
             top: -15px;
             right: -10px;
-            background: var(--nc-yellow);
+            background: #FCD34D;
             color: var(--nc-dark);
             font-family: var(--font-heading);
             font-weight: 900;
@@ -303,7 +436,7 @@
             padding: 0.75rem 1.5rem;
             border-radius: var(--radius-full);
             z-index: 5;
-            box-shadow: 0 4px 16px rgba(244, 197, 66, 0.4);
+            box-shadow: 0 4px 16px rgba(252, 211, 77, 0.4);
             animation: scBounce 3s ease-in-out infinite;
         }
 
@@ -755,29 +888,21 @@
             <div class="sc-hero-text">
                 <div class="sc-badge">
                     <div class="sc-badge-dot"></div>
-                    Registration Open
+                    🎉 That's a Wrap on 2026!
                 </div>
                 <h1>GO Sports Camp
-                    <span>June 15–17, 2026</span>
+                    <span>Thanks for an Amazing Week!</span>
                 </h1>
-                <p class="sc-hero-subtitle">Three days of sports, fun, and faith — completely FREE! Your kids will
-                    love every minute of it.</p>
+                <p class="sc-hero-subtitle">What a week! Three days of soccer, basketball, cheer, snow cones, and a
+                    whole lot of fun, friendship, and faith. Camp 2026 is in the books — and we already can't wait
+                    for next summer.</p>
                 <div class="sc-hero-cta">
-                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjxeH0bXSWVjAXxEG3THo0KDnIW3OwfsiasDehWrdmL0udyQ/viewform?usp=header"
-                        target="_blank" class="sc-btn-register" id="hero-register-btn">
-                        Register Now — It's Free!
-                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5"
-                                stroke-linecap="round" stroke-linejoin="round" />
-                        </svg>
-                    </a>
-                    <a href="#video" class="sc-btn-video" id="hero-video-btn">
+                    <a href="#video" class="sc-btn-register" id="hero-video-btn">
                         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <polygon points="5,3 19,12 5,21" fill="currentColor" />
                         </svg>
-                        Watch Video
+                        Watch the Highlights
                     </a>
                 </div>
             </div>
@@ -842,13 +967,52 @@
         </div>
     </div>
 
+    <!-- Closing Party Section -->
+    <section class="sc-party" id="party">
+        <div class="sc-party-inner">
+            <span class="sc-party-eyebrow">🙌 Thank You, Neighborhood!</span>
+            <h2>What a Camp It Was</h2>
+            <p class="sc-party-tagline">To every camper, parent, coach, and volunteer who made this year
+                unforgettable — thank you. You filled our fields with energy, laughter, and a whole lot of heart.</p>
+
+            <div class="sc-party-details">
+                <div class="sc-party-detail">
+                    <div class="sc-party-detail-icon">🏆</div>
+                    <div class="sc-party-detail-label">Campers</div>
+                    <div class="sc-party-detail-value">300+ Kids</div>
+                </div>
+                <div class="sc-party-detail">
+                    <div class="sc-party-detail-icon">🙋</div>
+                    <div class="sc-party-detail-label">Volunteers</div>
+                    <div class="sc-party-detail-value">75+ Coaches & Helpers</div>
+                </div>
+                <div class="sc-party-detail">
+                    <div class="sc-party-detail-icon">⚽</div>
+                    <div class="sc-party-detail-label">Sports</div>
+                    <div class="sc-party-detail-value">Soccer · Basketball · Cheer</div>
+                </div>
+            </div>
+
+            <p class="sc-party-note">See you next summer — same fields, same free fun, even more memories. 🎉</p>
+
+            <div class="sc-party-contact">
+                <p>Want to hear when next year's camp opens up? Reach out to Pastor Joel Reed —<br>
+                    <a href="mailto:jtreed89@gmail.com">jtreed89@gmail.com</a> &nbsp;·&nbsp;
+                    <a href="tel:+19139636703">(913) 963-6703</a>
+                </p>
+            </div>
+        </div>
+    </section>
+
     <!-- Video Section -->
     <section class="sc-video-section" id="video">
         <div class="section-header">
             <span class="section-tag" style="color: #FF6B35;">See It In Action</span>
             <h2>What Is GO Sports Camp?</h2>
-            <p class="section-intro">Watch this quick video to get a taste of the excitement, energy, and heart behind
-                GO Sports Camp.</p>
+            <p class="section-intro">GO Sports Camp is our FREE three-day neighborhood camp for kids entering
+                K&ndash;7th grade. Every morning is packed with soccer, basketball, and cheer, plus games, snacks,
+                and stories about the love of Jesus. It's our favorite week of the summer — here's a quick taste of
+                the energy and heart behind it all.</p>
         </div>
         <div class="sc-video-wrapper">
             <iframe src="https://www.youtube.com/embed/1JxwASBfhXc?rel=0" title="GO Sports Camp Video"
@@ -861,8 +1025,8 @@
     <section class="sc-details">
         <div class="sc-details-inner">
             <div class="section-header">
-                <span class="section-tag" style="color: #FF6B35;">Event Details</span>
-                <h2>Everything You Need to Know</h2>
+                <span class="section-tag" style="color: #FF6B35;">Good to Know</span>
+                <h2>About GO Sports Camp</h2>
             </div>
             <div class="sc-details-grid">
                 <!-- Schedule & Info Card -->
@@ -978,10 +1142,10 @@
     <!-- Photo Gallery -->
     <section class="sc-gallery">
         <div class="section-header">
-            <span class="section-tag" style="color: #FF6B35;">Past Camps</span>
-            <h2>Moments From Sports Camp</h2>
-            <p class="section-intro">Check out some highlights from previous years. Your kids could be part of the fun
-                this summer!</p>
+            <span class="section-tag" style="color: #FF6B35;">2026 Highlights</span>
+            <h2>Moments From This Year</h2>
+            <p class="section-intro">A few snapshots from an unforgettable week on the fields. Thanks for making it
+                one to remember!</p>
         </div>
         <div class="sc-gallery-grid">
             <div class="sc-gallery-item">
@@ -999,18 +1163,17 @@
     <!-- CTA Section -->
     <section class="sc-cta" id="register">
         <div class="sc-cta-inner">
-            <h2>Ready to Sign Up?</h2>
-            <p>Don't miss out on three amazing days of sports, friendships, and fun — all for FREE. Spots fill up fast,
-                so register today!</p>
-            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdjxeH0bXSWVjAXxEG3THo0KDnIW3OwfsiasDehWrdmL0udyQ/viewform?usp=header"
-                target="_blank" class="sc-btn-register" id="cta-register-btn">
-                Register Your Kids Now
+            <h2>See You Next Summer! 🎉</h2>
+            <p>Camp 2026 may be over, but our doors are open every Sunday. We'd love for your family to join us and
+                become part of the Neighborhood.</p>
+            <a href="sundays.html" class="sc-btn-register">
+                Plan a Visit
                 <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2.5"
                         stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </a>
-            <p class="sc-cta-note">Sponsored by Neighborhood Church · www.NeighborhoodChurchOP.com</p>
+            <p class="sc-cta-note">Questions about Sports Camp? Email Joel Reed at jtreed89@gmail.com · NeighborhoodChurchOP.com</p>
         </div>
     </section>
 
