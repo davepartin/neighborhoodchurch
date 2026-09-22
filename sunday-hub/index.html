@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Welcome | Neighborhood Church</title>
+    <meta name="description"
+        content="Welcome to Neighborhood Church in Overland Park. Connect with us, give, and register for upcoming events.">
+
+    <!-- QR-code-only page: intentionally kept out of search results -->
+    <meta name="robots" content="noindex, nofollow">
+
+    <meta name="theme-color" content="#FAFBFC">
+    <link rel="icon" type="image/png" href="../logo_NC3.png">
+    <link rel="apple-touch-icon" href="../logo_NC3.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+
+    <style>
+        /* Brand tokens mirrored from style.css so this page stays self-contained */
+        :root {
+            --nc-green: #5CB85C;
+            --nc-yellow: #F4C542;
+            --nc-blue: #66B3CC;
+            --nc-pink: #D64B7B;
+
+            --nc-dark: #2C3E50;
+            --nc-gray: #7F8C8D;
+            --nc-off-white: #FAFBFC;
+            --nc-white: #FFFFFF;
+
+            --font-heading: 'Montserrat', sans-serif;
+            --font-body: 'Open Sans', sans-serif;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        body {
+            background: var(--nc-off-white);
+            color: var(--nc-dark);
+            font-family: var(--font-body);
+            display: flex;
+            flex-direction: column;
+            min-height: 100dvh;
+            padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+        }
+
+        .hub {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            width: 100%;
+            max-width: 560px;
+            margin: 0 auto;
+            padding: clamp(1.2rem, 4vh, 2rem) clamp(2.2rem, 12vw, 3.75rem);
+            gap: clamp(1.1rem, 4vh, 2rem);
+        }
+
+        /* ---------- Header ---------- */
+        .hub-header {
+            text-align: center;
+            flex-shrink: 0;
+        }
+
+        .hub-logo {
+            height: clamp(38px, 7.5vh, 64px);
+            width: auto;
+            display: block;
+            margin: 0 auto clamp(0.3rem, 1vh, 0.55rem);
+        }
+
+        .hub-header p {
+            font-family: var(--font-heading);
+            font-size: clamp(0.7rem, 3.1vw, 0.85rem);
+            color: var(--nc-gray);
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+
+        /* ---------- Button grid ---------- */
+        /* Tiles are sized by proportion, not stretched to fill the screen —
+           that's what leaves white space around them. The dvh term keeps the
+           grid from ever growing tall enough to cause scrolling. */
+        .hub-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: clamp(0.85rem, 3.5vw, 1.25rem);
+            width: 100%;
+            max-width: min(100%, 255px, calc(62dvh - 135px));
+            margin-inline: auto;
+        }
+
+        .hub-btn {
+            aspect-ratio: 0.82;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: clamp(0.45rem, 1.6vh, 0.75rem);
+            padding: clamp(0.7rem, 2.2vh, 1.1rem) 0.5rem;
+            border-radius: clamp(20px, 6.5vw, 28px);
+            text-decoration: none;
+            text-align: center;
+            min-height: 0;
+            box-shadow: 0 6px 18px rgba(44, 62, 80, 0.16), 0 1px 3px rgba(44, 62, 80, 0.1);
+            transition: transform 0.15s cubic-bezier(0.4, 0, 0.2, 1), box-shadow 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .hub-btn:active {
+            transform: scale(0.965);
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.16);
+        }
+
+        .hub-btn svg {
+            width: clamp(30px, 11vw, 44px);
+            height: clamp(30px, 11vw, 44px);
+            stroke: currentColor;
+            fill: none;
+            stroke-width: 1.75;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            flex-shrink: 0;
+        }
+
+        .hub-btn .label {
+            font-family: var(--font-heading);
+            font-weight: 700;
+            font-size: clamp(0.85rem, 4vw, 1.05rem);
+            line-height: 1.18;
+            letter-spacing: 0.01em;
+        }
+
+        .hub-btn .sub {
+            font-size: clamp(0.64rem, 2.8vw, 0.76rem);
+            opacity: 0.9;
+            line-height: 1.3;
+            padding: 0 0.35rem;
+        }
+
+        /* Each button gets one of the four brand colors.
+           Yellow uses dark text — white on #F4C542 is unreadable. */
+        .btn-welcome {
+            background: var(--nc-green);
+            color: var(--nc-white);
+        }
+
+        .btn-contact {
+            background: var(--nc-blue);
+            color: var(--nc-white);
+        }
+
+        .btn-give {
+            background: var(--nc-pink);
+            color: var(--nc-white);
+        }
+
+        .btn-register {
+            background: var(--nc-yellow);
+            color: var(--nc-dark);
+        }
+
+        /* ---------- Footer ---------- */
+        .hub-footer {
+            text-align: center;
+            font-size: clamp(0.68rem, 3vw, 0.8rem);
+            color: var(--nc-gray);
+            line-height: 1.55;
+            flex-shrink: 0;
+        }
+
+        .hub-footer strong {
+            color: var(--nc-dark);
+            font-weight: 600;
+        }
+
+        /* Landscape phones: one row of four, sized off the short axis */
+        @media (max-height: 500px) and (orientation: landscape) {
+            .hub-grid {
+                grid-template-columns: repeat(4, 1fr);
+                max-width: min(100%, calc(200dvh - 260px), 620px);
+            }
+
+            .hub-btn {
+                aspect-ratio: 0.95;
+                border-radius: 18px;
+            }
+
+            .hub-btn svg {
+                width: clamp(24px, 9vh, 34px);
+                height: clamp(24px, 9vh, 34px);
+            }
+
+            .hub-btn .sub {
+                display: none;
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .hub-btn {
+                transition: none;
+            }
+
+            .hub-btn:active {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <main class="hub">
+
+        <header class="hub-header">
+            <img src="../NC_Logo_Green.png" alt="Neighborhood Church" class="hub-logo">
+            <p>Welcome &mdash; tap below</p>
+        </header>
+
+        <nav class="hub-grid">
+
+            <!-- Top left -->
+            <a class="hub-btn btn-welcome" href="https://neighborhoodchurchop.com">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M3 10.5 12 3l9 7.5" />
+                    <path d="M5 9.8V20a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V9.8" />
+                    <path d="M9.5 21v-6h5v6" />
+                </svg>
+                <span class="label">Welcome</span>
+                <span class="sub">Our website</span>
+            </a>
+
+            <!-- Top right -->
+            <a class="hub-btn btn-contact" href="https://neighborhoodchurch.churchcenter.com/people/forms/1328198">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="2.5" y="4.5" width="19" height="15" rx="2.5" />
+                    <circle cx="8.75" cy="11" r="2.25" />
+                    <path d="M5 16.4c.6-1.6 2.05-2.5 3.75-2.5s3.15.9 3.75 2.5" />
+                    <path d="M15.5 10h4M15.5 13.5h4" />
+                </svg>
+                <span class="label">Connect Card</span>
+                <span class="sub">Say hello</span>
+            </a>
+
+            <!-- Bottom left -->
+            <a class="hub-btn btn-give" href="https://neighborhoodchurch.churchcenter.com/giving">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <path d="M12 20.5s-7.4-4.6-7.4-9.7A4.3 4.3 0 0 1 12 7.9a4.3 4.3 0 0 1 7.4 2.9c0 5.1-7.4 9.7-7.4 9.7z" />
+                </svg>
+                <span class="label">Give</span>
+                <span class="sub">Online giving</span>
+            </a>
+
+            <!-- Bottom right -->
+            <a class="hub-btn btn-register" href="https://neighborhoodchurch.churchcenter.com/registrations/events">
+                <svg viewBox="0 0 24 24" aria-hidden="true">
+                    <rect x="3" y="5" width="18" height="16" rx="2.5" />
+                    <path d="M3 10h18M8 3v4M16 3v4" />
+                    <path d="M9 15.2l2 2 4-4" />
+                </svg>
+                <span class="label">Registrations</span>
+                <span class="sub">Events &amp; signups</span>
+            </a>
+
+        </nav>
+
+        <footer class="hub-footer">
+            <strong>Sundays at 10:30am</strong><br>
+            8600 W. 91st Terrace, Overland Park, KS
+        </footer>
+
+    </main>
+</body>
+
+</html>
