@@ -36,6 +36,10 @@
 
             --font-heading: 'Montserrat', sans-serif;
             --font-body: 'Open Sans', sans-serif;
+
+            /* Same effective width as the 2×2 tile row, so the logo
+               lines up with two buttons side-by-side. */
+            --hub-grid-max: min(100%, 280px, calc(68dvh - 122px));
         }
 
         * {
@@ -77,11 +81,14 @@
         .hub-header {
             text-align: center;
             flex-shrink: 0;
+            width: 100%;
+            max-width: var(--hub-grid-max);
+            margin-inline: auto;
         }
 
         .hub-logo {
-            height: clamp(38px, 7.5vh, 64px);
-            width: auto;
+            width: 100%;
+            height: auto;
             display: block;
             margin: 0 auto clamp(0.3rem, 1vh, 0.55rem);
         }
@@ -104,7 +111,7 @@
             grid-template-columns: 1fr 1fr;
             gap: clamp(0.85rem, 3.5vw, 1.25rem);
             width: 100%;
-            max-width: min(100%, 280px, calc(68dvh - 122px));
+            max-width: var(--hub-grid-max);
             margin-inline: auto;
         }
 
@@ -205,6 +212,15 @@
 
         /* Landscape phones: one row of four, sized off the short axis */
         @media (max-height: 500px) and (orientation: landscape) {
+            .hub-header {
+                /* Keep the mark centered and shorter than the 4-col row */
+                max-width: min(188px, 48vh);
+            }
+
+            .hub-logo {
+                margin-bottom: 0.15rem;
+            }
+
             .hub-grid {
                 grid-template-columns: repeat(4, 1fr);
                 max-width: min(100%, calc(220dvh - 236px), 682px);
