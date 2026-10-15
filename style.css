@@ -2316,3 +2316,16 @@ form {
         font-size: 2rem;
     }
 }
+
+/* Tablet: tighten top menu so all links fit before the hamburger menu takes over */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-links {
+        gap: 0.25rem;
+    }
+
+    .nav-links a,
+    .nav-links .dropbtn {
+        font-size: 0.85rem;
+        padding: 0.4rem 0.5rem;
+    }
+}
