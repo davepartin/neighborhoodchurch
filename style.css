@@ -331,8 +331,8 @@ ul {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 20%;
-    /* Focus slightly higher */
+    object-position: center 55%;
+    /* Focus on the people rather than the ceiling */
 }
 
 /* Update standard hero to have less top padding */
