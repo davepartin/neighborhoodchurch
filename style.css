@@ -327,12 +327,18 @@ ul {
     margin-top: 0;
 }
 
+.hero-banner picture {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .hero-banner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: center 55%;
-    /* Focus on the people rather than the ceiling */
+    object-position: center 40%;
+    /* Keep the stage and cross in frame */
 }
 
 /* Update standard hero to have less top padding */
@@ -1423,6 +1429,10 @@ form {
         height: 50vh;
     }
 
+    .hero-banner img {
+        object-position: center 22%;
+    }
+
     .footer-container {
         grid-template-columns: 1fr;
         gap: 3rem;
@@ -1540,7 +1550,13 @@ form {
     }
 
     .hero-banner {
-        height: 35vh;
+        height: 42vh;
+    }
+
+    .hero-banner img {
+        object-position: center 18%;
+        transform: scale(1.28);
+        transform-origin: center 20%;
     }
 
     .carousel-container {
