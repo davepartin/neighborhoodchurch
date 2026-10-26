@@ -1430,7 +1430,7 @@ form {
     }
 
     .hero-banner img {
-        object-position: center 38%;
+        object-position: center 22%;
     }
 
     .footer-container {
@@ -1550,11 +1550,13 @@ form {
     }
 
     .hero-banner {
-        height: 35vh;
+        height: 42vh;
     }
 
     .hero-banner img {
-        object-position: center 36%;
+        object-position: center 18%;
+        transform: scale(1.28);
+        transform-origin: center 20%;
     }
 
     .carousel-container {
